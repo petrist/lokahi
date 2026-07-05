@@ -830,6 +830,7 @@ html[lang="en"] .cz-only { display: none; }
       <li><a href="#home"><span class="cz-only">Domů</span><span class="en-only">Home</span></a></li>
       <li><a href="#menu">Menu</a></li>
       <li><a href="#about"><span class="cz-only">O nás</span><span class="en-only">About</span></a></li>
+      <li><a href="/veci-ktere-milujeme/"><span class="cz-only">Milujeme</span><span class="en-only">We love</span></a></li>
       <li><a href="#contact"><span class="cz-only">Kontakt</span><span class="en-only">Contact</span></a></li>
     </ul>
     <button class="lang-toggle" id="lang-btn" onclick="toggleLang()" aria-label="Switch language">EN</button>
@@ -1115,6 +1116,54 @@ html[lang="en"] .cz-only { display: none; }
 </section>
 
 <!-- CONTACT -->
+<!-- VĚCI, KTERÉ MILUJEME — teaser -->
+<style>
+  #love { background: var(--linen); padding: 7rem 3.5rem; }
+  .love-inner { max-width: 1120px; margin: 0 auto; }
+  .love-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem; }
+  .love-title { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; }
+  .love-lede { font-family: var(--serif); font-style: italic; color: var(--taupe); font-size: 1.15rem; max-width: 460px; line-height: 1.6; }
+  .love-link { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--olive); text-decoration: none; white-space: nowrap; border-bottom: 1px solid var(--olive); padding-bottom: 3px; }
+  .love-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .love-card { display: block; background: var(--white); border: 1px solid rgba(150,124,100,0.14); padding: 1.6rem; text-decoration: none; color: inherit; transition: transform 0.35s ease, box-shadow 0.35s ease; }
+  .love-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(18,20,16,0.08); }
+  .love-card .k { font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--olive); }
+  .love-card h3 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; line-height: 1.2; margin: 0.55rem 0 0.5rem; }
+  .love-card p { font-size: 0.84rem; color: var(--taupe); line-height: 1.6; }
+  @media (max-width: 820px) {
+    #love { padding: 5rem 1.5rem; }
+    .love-grid { grid-template-columns: 1fr; }
+  }
+</style>
+<section id="love">
+  <div class="love-inner">
+    <div class="love-head fade-up">
+      <div>
+        <p class="section-label"><span class="cz-only">Věci, které milujeme</span><span class="en-only">Things we love</span></p>
+        <h2 class="love-title"><span class="cz-only">Každý detail má původ<br>a důvod.</span><span class="en-only">Every detail has an<br>origin and a reason.</span></h2>
+      </div>
+      <a href="/veci-ktere-milujeme/" class="love-link"><span class="cz-only">Všechny příběhy →</span><span class="en-only">All stories →</span></a>
+    </div>
+    <div class="love-grid">
+      <a href="/veci-ktere-milujeme/prosciutto-san-daniele-il-camarin/" class="love-card fade-up">
+        <p class="k"><span class="cz-only">Víno &amp; charcuterie</span><span class="en-only">Wine &amp; charcuterie</span></p>
+        <h3>Prosciutto di San Daniele</h3>
+        <p><span class="cz-only">Pro které jsme jeli přímo do San Daniele del Friuli.</span><span class="en-only">Which we drove to San Daniele del Friuli for.</span></p>
+      </a>
+      <a href="/veci-ktere-milujeme/" class="love-card fade-up d1">
+        <p class="k"><span class="cz-only">Víno</span><span class="en-only">Wine</span></p>
+        <h3>Weingut Hirtl</h3>
+        <p><span class="cz-only">Grüner Veltliner a Welschriesling z Poysdorfu.</span><span class="en-only">Grüner Veltliner &amp; Welschriesling from Poysdorf.</span></p>
+      </a>
+      <a href="/veci-ktere-milujeme/" class="love-card fade-up d2">
+        <p class="k"><span class="cz-only">Káva</span><span class="en-only">Coffee</span></p>
+        <h3>QB Coffee Roastery</h3>
+        <p><span class="cz-only">Výběrová káva jako první detail dne.</span><span class="en-only">Speciality coffee as the first detail of the day.</span></p>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="contact-inner">
 
