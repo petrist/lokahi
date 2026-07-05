@@ -64,8 +64,9 @@
     "longitude": 16.5961622
   },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday"], "opens": "08:00", "closes": "20:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday"], "opens": "08:30", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "22:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "18:00" }
   ],
   "sameAs": [
@@ -143,12 +144,12 @@
     {
       "@type": "Question",
       "name": "Kdy je LŌKAHI otevřeno?",
-      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI je otevřeno: pondělí–úterý 8:00–20:00, středa–sobota 8:00–22:00, neděle 9:00–18:00." }
+      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI je otevřeno: pondělí–úterý 8:30–20:00, středa–pátek 8:30–22:00, sobota 9:00–22:00, neděle 9:00–18:00." }
     },
     {
       "@type": "Question",
       "name": "What are LŌKAHI opening hours?",
-      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI is open Monday–Tuesday 8:00–20:00, Wednesday–Saturday 8:00–22:00, Sunday 9:00–18:00." }
+      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI is open Monday–Tuesday 8:30–20:00, Wednesday–Friday 8:30–22:00, Saturday 9:00–22:00, Sunday 9:00–18:00." }
     },
     {
       "@type": "Question",
@@ -1132,27 +1133,27 @@ html[lang="en"] .cz-only { display: none; }
         </p>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Pondělí</span><span class="en-only">Monday</span></span>
-          <span class="hours-time">8:00 – 20:00</span>
+          <span class="hours-time">8:30 – 20:00</span>
         </div>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Úterý</span><span class="en-only">Tuesday</span></span>
-          <span class="hours-time">8:00 – 20:00</span>
+          <span class="hours-time">8:30 – 20:00</span>
         </div>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Středa</span><span class="en-only">Wednesday</span></span>
-          <span class="hours-time">8:00 – 22:00</span>
+          <span class="hours-time">8:30 – 22:00</span>
         </div>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Čtvrtek</span><span class="en-only">Thursday</span></span>
-          <span class="hours-time">8:00 – 22:00</span>
+          <span class="hours-time">8:30 – 22:00</span>
         </div>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Pátek</span><span class="en-only">Friday</span></span>
-          <span class="hours-time">8:00 – 22:00</span>
+          <span class="hours-time">8:30 – 22:00</span>
         </div>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Sobota</span><span class="en-only">Saturday</span></span>
-          <span class="hours-time">8:00 – 22:00</span>
+          <span class="hours-time">9:00 – 22:00</span>
         </div>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Neděle</span><span class="en-only">Sunday</span></span>
@@ -1227,8 +1228,8 @@ html[lang="en"] .cz-only { display: none; }
 <!-- GEO PROSE — factual entity paragraph for AI crawler indexing -->
 <article aria-label="About LŌKAHI" style="max-width:1120px;margin:0 auto;padding:3rem 3.5rem 1rem;border-top:1px solid rgba(150,124,100,0.12);">
   <p style="font-size:0.72rem;color:var(--taupe);line-height:1.85;font-family:var(--sans);font-weight:300;">
-    <span class="cz-only">LŌKAHI je kavárna, wine bar a store na adrese Jiráskova 15, 602 00 Brno, Česká republika (IČO: 24602299). Podnik se specializuje na specialty kávu od výběrových pražičů — QB Coffee Roastery a The Naughty Dog Coffee Roastery — a na moravská a evropská vína od vinařství jako Georgias Ilias z Pavlova, Gala Vinařství z Bavor u Mikulova a Jan Stávek z Němčiček. Snídaně jsou podávány každý den od 8:00 do 13:00 a zahrnují suroviny od místních producentů: vejce z farmy Valcha, chléb z pekárny Chleba Brno a šunku od Kloudů. LŌKAHI má venkovní terasu, přijímá rezervace na telefonním čísle +420 737 899 827 nebo e-mailem na reservations@lokahi.cz a je otevřeno pondělí–úterý 8:00–20:00, středa–sobota 8:00–22:00, neděle 9:00–18:00. Název kavárny pochází z havajského slova označujícího jednotu, harmonii a rovnováhu.</span>
-    <span class="en-only">LŌKAHI is a café, wine bar and store located at Jiráskova 15, 602 00 Brno, Czech Republic. The venue specialises in specialty coffee from selected roasters — QB Coffee Roastery and The Naughty Dog Coffee Roastery — and in Moravian and European wines from producers including Georgias Ilias from Pavlov, Gala Winery from Bavory u Mikulova, and Jan Stávek from Němčičky. Breakfast is served daily from 8:00 to 13:00 and features ingredients from local producers: eggs from Farma Valcha, bread from Chleba Brno bakery, and ham from Kloudů. LŌKAHI has outdoor terrace seating, accepts reservations at +420 737 899 827 or reservations@lokahi.cz, and is open Monday–Tuesday 8:00–20:00, Wednesday–Saturday 8:00–22:00, Sunday 9:00–18:00. The name comes from a Hawaiian word meaning unity, harmony and balance.</span>
+    <span class="cz-only">LŌKAHI je kavárna, wine bar a store na adrese Jiráskova 15, 602 00 Brno, Česká republika (IČO: 24602299). Podnik se specializuje na specialty kávu od výběrových pražičů — QB Coffee Roastery a The Naughty Dog Coffee Roastery — a na moravská a evropská vína od vinařství jako Georgias Ilias z Pavlova, Gala Vinařství z Bavor u Mikulova a Jan Stávek z Němčiček. Snídaně jsou podávány každý den od 8:00 do 13:00 a zahrnují suroviny od místních producentů: vejce z farmy Valcha, chléb z pekárny Chleba Brno a šunku od Kloudů. LŌKAHI má venkovní terasu, přijímá rezervace na telefonním čísle +420 737 899 827 nebo e-mailem na reservations@lokahi.cz a je otevřeno pondělí–úterý 8:30–20:00, středa–pátek 8:30–22:00, sobota 9:00–22:00, neděle 9:00–18:00. Název kavárny pochází z havajského slova označujícího jednotu, harmonii a rovnováhu.</span>
+    <span class="en-only">LŌKAHI is a café, wine bar and store located at Jiráskova 15, 602 00 Brno, Czech Republic. The venue specialises in specialty coffee from selected roasters — QB Coffee Roastery and The Naughty Dog Coffee Roastery — and in Moravian and European wines from producers including Georgias Ilias from Pavlov, Gala Winery from Bavory u Mikulova, and Jan Stávek from Němčičky. Breakfast is served daily from 8:00 to 13:00 and features ingredients from local producers: eggs from Farma Valcha, bread from Chleba Brno bakery, and ham from Kloudů. LŌKAHI has outdoor terrace seating, accepts reservations at +420 737 899 827 or reservations@lokahi.cz, and is open Monday–Tuesday 8:30–20:00, Wednesday–Friday 8:30–22:00, Saturday 9:00–22:00, Sunday 9:00–18:00. The name comes from a Hawaiian word meaning unity, harmony and balance.</span>
   </p>
 </article>
 
