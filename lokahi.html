@@ -66,8 +66,7 @@
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday"], "opens": "08:30", "closes": "20:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "22:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "22:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "18:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "22:00" }
   ],
   "sameAs": [
     "https://www.instagram.com/lokahi_brno/",
@@ -98,7 +97,7 @@
       "hasMenuItem": [
         { "@type": "MenuItem", "name": "Espresso", "offers": { "@type": "Offer", "price": "70", "priceCurrency": "CZK" } },
         { "@type": "MenuItem", "name": "Flat white", "offers": { "@type": "Offer", "price": "95", "priceCurrency": "CZK" } },
-        { "@type": "MenuItem", "name": "Batch brew", "description": "The Naughty Dog Coffee Roastery", "offers": { "@type": "Offer", "price": "70", "priceCurrency": "CZK" } },
+        { "@type": "MenuItem", "name": "Hario V60", "description": "The Naughty Dog Coffee Roastery", "offers": { "@type": "Offer", "price": "95", "priceCurrency": "CZK" } },
         { "@type": "MenuItem", "name": "Matcha tonic", "offers": { "@type": "Offer", "price": "120", "priceCurrency": "CZK" } },
         { "@type": "MenuItem", "name": "Cold brew", "offers": { "@type": "Offer", "price": "90", "priceCurrency": "CZK" } }
       ]
@@ -106,20 +105,30 @@
     {
       "@type": "MenuSection",
       "name": "Snídaně / Breakfast",
-      "description": "Podáváme 8:00–13:00",
+      "description": "Podáváme 8:30–13:00",
       "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Náš Lōkahi talíř", "description": "Farmářské vejce na měkko, horský sýr, šunka od Kloudů, slaná granola, kváskový chléb", "offers": { "@type": "Offer", "price": "240", "priceCurrency": "CZK" } },
-        { "@type": "MenuItem", "name": "Snídaňový bowl", "description": "Řecký jogurt, čerstvé ovoce, granola, maracuja, včelí pyl", "offers": { "@type": "Offer", "price": "180", "priceCurrency": "CZK" } },
-        { "@type": "MenuItem", "name": "Uzený losos Trnečka", "description": "Avokádo, farmářské vejce, mikrobylinky, sezam, kváskový chléb", "offers": { "@type": "Offer", "price": "220", "priceCurrency": "CZK" } }
+        { "@type": "MenuItem", "name": "Náš Lōkahi talíř", "description": "Pošírované vejce, horský sýr, šunka od Kloudů, slaná granola s cottage, avokádo, kváskový chléb", "offers": { "@type": "Offer", "price": "240", "priceCurrency": "CZK" } },
+        { "@type": "MenuItem", "name": "Snídaňový bowl", "description": "Řecký jogurt, čerstvé ovoce, granola, maracuja, včelí pyl", "offers": { "@type": "Offer", "price": "145", "priceCurrency": "CZK" } },
+        { "@type": "MenuItem", "name": "Uzený losos Trnečka", "description": "Avokádo, farmářské vejce, mikrobylinky, sezam, kváskový chléb", "offers": { "@type": "Offer", "price": "195", "priceCurrency": "CZK" } },
+        { "@type": "MenuItem", "name": "Lívance", "description": "3 ks, sezónní ovoce", "offers": { "@type": "Offer", "price": "215", "priceCurrency": "CZK" } }
       ]
     },
     {
       "@type": "MenuSection",
       "name": "Víno / Wine",
       "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Veltlínské zelené", "description": "Suché, kabinetní — vinařství Georgias Ilias, Pavlov, ČR", "offers": { "@type": "Offer", "price": "125", "priceCurrency": "CZK" } },
+        { "@type": "MenuItem", "name": "Hirtl – Grüner Veltliner", "description": "Suché — Rakousko, Poysdorf", "offers": { "@type": "Offer", "price": "100", "priceCurrency": "CZK" } },
         { "@type": "MenuItem", "name": "Prosecco", "description": "Brut — La Marca, Treviso, Itálie", "offers": { "@type": "Offer", "price": "125", "priceCurrency": "CZK" } },
         { "@type": "MenuItem", "name": "Cava Hoya", "description": "Brut nature, bez zbytkového cukru — Španělsko", "offers": { "@type": "Offer", "price": "140", "priceCurrency": "CZK" } }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Prkýnka / Boards",
+      "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Lōkahi prkno pro 1 osobu", "description": "Sýr, uzenina, čerstvé pečivo, ovoce, oříšky, olivy, chutney, olivový olej", "offers": { "@type": "Offer", "price": "300", "priceCurrency": "CZK" } },
+        { "@type": "MenuItem", "name": "Lōkahi prkno pro 2 osoby", "offers": { "@type": "Offer", "price": "550", "priceCurrency": "CZK" } },
+        { "@type": "MenuItem", "name": "Lōkahi prkno pro 4 osoby", "offers": { "@type": "Offer", "price": "950", "priceCurrency": "CZK" } }
       ]
     }
   ]
@@ -144,22 +153,22 @@
     {
       "@type": "Question",
       "name": "Kdy je LŌKAHI otevřeno?",
-      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI je otevřeno: pondělí–úterý 8:30–20:00, středa–pátek 8:30–22:00, sobota 9:00–22:00, neděle 9:00–18:00." }
+      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI je otevřeno: pondělí–úterý 8:30–20:00, středa–pátek 8:30–22:00, sobota 9:00–22:00. V neděli je zavřeno." }
     },
     {
       "@type": "Question",
       "name": "What are LŌKAHI opening hours?",
-      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI is open Monday–Tuesday 8:30–20:00, Wednesday–Friday 8:30–22:00, Saturday 9:00–22:00, Sunday 9:00–18:00." }
+      "acceptedAnswer": { "@type": "Answer", "text": "LŌKAHI is open Monday–Tuesday 8:30–20:00, Wednesday–Friday 8:30–22:00, and Saturday 9:00–22:00. Closed on Sundays." }
     },
     {
       "@type": "Question",
       "name": "Podává LŌKAHI snídaně?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ano, LŌKAHI podává snídaně každý den od 8:00 do 13:00. Menu zahrnuje farmářská vejce, avokádo toast, snídaňový bowl a pečivo z Chleba Brno." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Ano, LŌKAHI podává snídaně od 8:30 do 13:00. Menu zahrnuje farmářská vejce, avokádový chléb, lívance, snídaňový bowl a pečivo z Chleba Brno." }
     },
     {
       "@type": "Question",
       "name": "Does LŌKAHI serve breakfast?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, LŌKAHI serves breakfast daily from 8:00 to 13:00. The menu includes farm eggs, avocado toast, breakfast bowl, and pastries from Chleba Brno." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, LŌKAHI serves breakfast from 8:30 to 13:00. The menu includes farm eggs, avocado toast, fluffy Czech pancakes, breakfast bowl, and pastries from Chleba Brno." }
     },
     {
       "@type": "Question",
@@ -913,7 +922,7 @@ html[lang="en"] .cz-only { display: none; }
       <div class="menu-tabs">
         <button class="menu-tab active" data-tab="coffee"><span class="cz-only">Káva</span><span class="en-only">Coffee</span></button>
         <button class="menu-tab" data-tab="food"><span class="cz-only">Snídaně</span><span class="en-only">Breakfast</span></button>
-        <button class="menu-tab" data-tab="wine"><span class="cz-only">Víno</span><span class="en-only">Wine</span></button>
+        <button class="menu-tab" data-tab="wine"><span class="cz-only">Víno &amp; Prkýnka</span><span class="en-only">Wine &amp; Boards</span></button>
         <button class="menu-tab" data-tab="drinks"><span class="cz-only">Drinky &amp; Pivo</span><span class="en-only">Cocktails &amp; Beer</span></button>
         <button class="menu-tab" data-tab="soft"><span class="cz-only">Nealko</span><span class="en-only">Non-alcoholic</span></button>
       </div>
@@ -933,21 +942,24 @@ html[lang="en"] .cz-only { display: none; }
             <div class="mi"><div class="mi-left"><div class="mi-name">Cappuccino</div></div><span class="mi-price">85</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Flat white</div></div><span class="mi-price">95</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Café latté</div></div><span class="mi-price">90</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Batch brew</div><div class="mi-desc">The Naughty Dog Coffee Roastery</div></div><span class="mi-price">70 / 90</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Extra shot</div></div><span class="mi-price">30</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Hario V60</div><div class="mi-desc">250 ml · The Naughty Dog Coffee Roastery</div></div><span class="mi-price">95</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Extra shot</div></div><span class="mi-price">20</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Rostlinné mléko</span><span class="en-only">Plant milk</span></div><div class="mi-desc"><span class="cz-only">více druhů</span><span class="en-only">various options</span></div></div><span class="mi-price">15</span></div>
           </div>
         </div>
         <div>
           <div class="menu-cat">
             <p class="cat-title"><span class="cz-only">— Speciality —</span><span class="en-only">— Specialties —</span></p>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Matcha latté</div></div><span class="mi-price">100</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Matcha latté</div><div class="mi-desc"><span class="cz-only">mango / malina</span><span class="en-only">mango / raspberry</span></div></div><span class="mi-price">130</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Matcha cloud</div><div class="mi-desc"><span class="cz-only">matcha s kokosovou vodou</span><span class="en-only">matcha with coconut water</span></div></div><span class="mi-price">110</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Matcha tonic</div></div><span class="mi-price">120</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Espresso tonic</div></div><span class="mi-price">100</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Espresso &amp; grep fresh</div></div><span class="mi-price">130</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Chai latté</div></div><span class="mi-price">90</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Dirty chai latté</div></div><span class="mi-price">110</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Cold brew</div></div><span class="mi-price">90</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Mango cold brew</div></div><span class="mi-price">110</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Mango cold brew</div></div><span class="mi-price">100</span></div>
           </div>
         </div>
       </div>
@@ -958,38 +970,57 @@ html[lang="en"] .cz-only { display: none; }
       <div class="menu-cols">
         <div>
           <div class="menu-cat">
-            <p class="cat-title"><span class="cz-only">— Snídejte spolu a dlouho · 8:00 – 13:00 —</span><span class="en-only">— Breakfast together · 8:00 – 13:00 —</span></p>
+            <p class="cat-title"><span class="cz-only">— Snídejte spolu a dlouho · 8:30 – 13:00 —</span><span class="en-only">— Breakfast, together &amp; slow · 8:30 – 13:00 —</span></p>
             <div class="mi"><div class="mi-left">
               <div class="mi-name"><span class="cz-only">Náš Lōkahi talíř</span><span class="en-only">Our Lōkahi plate</span></div>
-              <div class="mi-desc"><span class="cz-only">farmářské vejce na měkko, horský sýr, šunka od Kloudů, slaná granola, vyšlehané máslo, pomeranč, salátek, kváskový chléb</span><span class="en-only">soft-boiled farm egg, mountain cheese, Kloudů ham, salted granola, whipped butter, orange, greens, sourdough bread</span></div>
+              <div class="mi-desc"><span class="cz-only">pošírované vejce, horský sýr, šunka od Kloudů, naše slaná granola s cottage, vyšlehané máslo, pomeranč, avokádo, salátek, kváskový chléb</span><span class="en-only">poached egg, mountain cheese, Klouda family ham, our savoury granola with cottage cheese, whipped butter, orange, avocado, side salad, sourdough bread</span></div>
             </div><span class="mi-price">240</span></div>
             <div class="mi"><div class="mi-left">
               <div class="mi-name"><span class="cz-only">Omeleta z farmářských vajíček</span><span class="en-only">Farm egg omelette</span></div>
-              <div class="mi-desc"><span class="cz-only">s parmezánem a pažitkou, vyšlehané máslo, kváskový chléb</span><span class="en-only">with parmesan &amp; chives, whipped butter, sourdough bread</span></div>
+              <div class="mi-desc"><span class="cz-only">s parmezánem a pažitkou, vyšlehané máslo, kváskový chléb, salátek</span><span class="en-only">parmesan &amp; chives, whipped butter, sourdough bread, side salad</span></div>
             </div><span class="mi-price">180</span></div>
             <div class="mi"><div class="mi-left">
-              <div class="mi-name"><span class="cz-only">Vejce do skla</span><span class="en-only">Baked eggs</span></div>
-              <div class="mi-desc"><span class="cz-only">tři vejce z farmy Valcha s parmezánem a pažitkou, vyšlehané máslo, kváskový chléb</span><span class="en-only">three Valcha farm eggs with parmesan &amp; chives, whipped butter, sourdough bread</span></div>
-            </div><span class="mi-price">160</span></div>
+              <div class="mi-name"><span class="cz-only">Míchaná vajíčka z farmářských vajíček</span><span class="en-only">Scrambled farm eggs</span></div>
+              <div class="mi-desc"><span class="cz-only">tři vejce z farmy Valcha, vyšlehané máslo, kváskový chléb, salátek</span><span class="en-only">three eggs from Valcha farm, whipped butter, sourdough bread, side salad</span></div>
+            </div><span class="mi-price">180</span></div>
             <div class="mi"><div class="mi-left">
-              <div class="mi-name"><span class="cz-only">Uzený losos Trnečka</span><span class="en-only">Smoked Trnečka salmon</span></div>
+              <div class="mi-name"><span class="cz-only">Vejce do skla</span><span class="en-only">Eggs in a glass</span></div>
+              <div class="mi-desc"><span class="cz-only">tři vejce z farmy Valcha s parmezánem a pažitkou, vyšlehané máslo, salátek, kváskový chléb</span><span class="en-only">three Valcha farm eggs with parmesan &amp; chives, whipped butter, side salad, sourdough bread</span></div>
+            </div><span class="mi-price">185</span></div>
+            <div class="mi"><div class="mi-left">
+              <div class="mi-name"><span class="cz-only">Uzený losos Trnečka</span><span class="en-only">Trnečka smoked salmon</span></div>
               <div class="mi-desc"><span class="cz-only">avokádo, farmářské vejce na měkko, vyšlehané máslo, mikrobylinky, sezam, kváskový chléb</span><span class="en-only">avocado, soft-boiled farm egg, whipped butter, microgreens, sesame, sourdough bread</span></div>
-            </div><span class="mi-price">220</span></div>
+            </div><span class="mi-price">195</span></div>
             <div class="mi"><div class="mi-left">
               <div class="mi-name"><span class="cz-only">Snídaňový bowl</span><span class="en-only">Breakfast bowl</span></div>
               <div class="mi-desc"><span class="cz-only">s řeckým jogurtem, čerstvé ovoce, naše granola, maracuja, včelí pyl</span><span class="en-only">Greek yoghurt, fresh fruit, our granola, passion fruit, bee pollen</span></div>
-            </div><span class="mi-price">180</span></div>
+            </div><span class="mi-price">145</span></div>
             <div class="mi"><div class="mi-left">
               <div class="mi-name">Loupáček z Chleba Brno</div>
               <div class="mi-desc"><span class="cz-only">našlehané máslo, marmeláda</span><span class="en-only">whipped butter, jam</span></div>
-            </div><span class="mi-price">80</span></div>
-            <div class="mi"><div class="mi-left">
-              <div class="mi-name">Rohlík z Chleba Brno</div>
-              <div class="mi-desc"><span class="cz-only">našlehané máslo, šunka od Kloudů</span><span class="en-only">whipped butter, Kloudů ham</span></div>
             </div><span class="mi-price">60</span></div>
+            <div class="mi"><div class="mi-left">
+              <div class="mi-name"><span class="cz-only">Obložený čerstvý chléb</span><span class="en-only">Fresh open sandwich</span></div>
+              <div class="mi-desc"><span class="cz-only">s domácí pomazánkou a klíčky, dle denní nabídky</span><span class="en-only">homemade spread &amp; sprouts, daily offer</span></div>
+            </div><span class="mi-price">100</span></div>
+            <div class="mi"><div class="mi-left">
+              <div class="mi-name"><span class="cz-only">Avokádový chléb</span><span class="en-only">Avocado toast</span></div>
+              <div class="mi-desc"><span class="cz-only">se slaninou a sázeným vejcem, crème fraîche, čerstvé klíčky</span><span class="en-only">bacon &amp; fried egg, crème fraîche, fresh sprouts</span></div>
+            </div><span class="mi-price">190</span></div>
+            <div class="mi"><div class="mi-left">
+              <div class="mi-name">Lívance</div>
+              <div class="mi-desc"><span class="cz-only">3 ks, sezónní ovoce</span><span class="en-only">3 fluffy Czech pancakes, seasonal fruit</span></div>
+            </div><span class="mi-price">215</span></div>
           </div>
         </div>
         <div>
+          <div class="menu-cat">
+            <p class="cat-title"><span class="cz-only">— Extra —</span><span class="en-only">— Extras —</span></p>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Avokádo</span><span class="en-only">Avocado</span></div></div><span class="mi-price">40</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Vejce</span><span class="en-only">Egg</span></div></div><span class="mi-price">25</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Šunka / slanina</span><span class="en-only">Ham / bacon</span></div></div><span class="mi-price">35</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Sýr</span><span class="en-only">Cheese</span></div></div><span class="mi-price">30</span></div>
+          </div>
           <div class="menu-cat">
             <p class="cat-title"><span class="cz-only">— Sladkosti —</span><span class="en-only">— Sweets —</span></p>
             <p style="font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--taupe);line-height:1.75;">
@@ -999,8 +1030,8 @@ html[lang="en"] .cz-only { display: none; }
           </div>
           <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(150,124,100,0.12);">
             <p style="font-size:0.78rem;color:var(--taupe);line-height:1.85;">
-              <span class="cz-only">Pracujeme se sezónností surovin, naší kreativitou a čerstvostí.<br>Každý den trochu jinak. Společně.</span>
-              <span class="en-only">We work with seasonal produce, creativity and freshness.<br>A little different every day. Together.</span>
+              <span class="cz-only">Spoustu dalšího najdete v naší vitríně nebo se zeptejte obsluhy.<br>Pracujeme se sezónností surovin — každý den trochu jinak. Společně.</span>
+              <span class="en-only">You'll find plenty more in our display — or just ask us.<br>We follow the seasons, a little different every day. Together.</span>
             </p>
           </div>
         </div>
@@ -1013,36 +1044,53 @@ html[lang="en"] .cz-only { display: none; }
         <div>
           <div class="menu-cat">
             <p class="cat-title"><span class="cz-only">— Bílé víno · 1,5 dl / láhev —</span><span class="en-only">— White wine · 1.5 dl / bottle —</span></p>
-            <div class="mi"><div class="mi-left"><div class="mi-name">CMYK</div><div class="mi-desc"><span class="cz-only">suché, moravské zemské víno · vinařství Plenér, Pavlov, ČR</span><span class="en-only">dry, Moravian country wine · Plenér winery, Pavlov, CZ</span></div></div><span class="mi-price">110 / 520</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Veltlínské zelené</div><div class="mi-desc"><span class="cz-only">suché, kabinetní · vinařství Georgias Ilias, Pavlov, ČR</span><span class="en-only">dry, kabinett · Georgias Ilias winery, Pavlov, CZ</span></div></div><span class="mi-price">125 / 550</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Ryzlink vlašský</div><div class="mi-desc"><span class="cz-only">suché, pozdní sběr · vinařství Georgias Ilias, Pavlov, ČR</span><span class="en-only">dry, late harvest · Georgias Ilias winery, Pavlov, CZ</span></div></div><span class="mi-price">125 / 550</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Ryzlink rýnský</div><div class="mi-desc"><span class="cz-only">suché, pozdní sběr · vinařství Georgias Ilias, Pavlov, ČR</span><span class="en-only">dry, late harvest · Georgias Ilias winery, Pavlov, CZ</span></div></div><span class="mi-price">125 / 550</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Hirtl – Grüner Veltliner</div><div class="mi-desc"><span class="cz-only">suché · Rakousko, Poysdorf</span><span class="en-only">dry · Austria, Poysdorf</span></div></div><span class="mi-price">100 / 480</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Hirtl – Welsch Riesling</div><div class="mi-desc"><span class="cz-only">suché · Rakousko, Poysdorf</span><span class="en-only">dry · Austria, Poysdorf</span></div></div><span class="mi-price">100 / 480</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">CMYK</div><div class="mi-desc"><span class="cz-only">suché, moravské zemské víno · vinařství Plenér, Pavlov, ČR</span><span class="en-only">dry, Moravian country wine · Plenér winery, Pavlov, CZ</span></div></div><span class="mi-price">110 / 520</span></div>
+          </div>
+          <div class="menu-cat">
+            <p class="cat-title"><span class="cz-only">— Červené víno · 1,5 dl / láhev —</span><span class="en-only">— Red wine · 1.5 dl / bottle —</span></p>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Rioja</div><div class="mi-desc"><span class="cz-only">suché, Španělsko · Vina Real</span><span class="en-only">dry, Spain · Vina Real</span></div></div><span class="mi-price">130 / 590</span></div>
           </div>
           <div class="menu-cat">
             <p class="cat-title"><span class="cz-only">— Růžové víno · 1,5 dl / láhev —</span><span class="en-only">— Rosé wine · 1.5 dl / bottle —</span></p>
             <div class="mi"><div class="mi-left"><div class="mi-name">Rosé Trkmanska Voc</div><div class="mi-desc"><span class="cz-only">suché, moravské zemské víno · Jan Stávek, Němčičky, ČR</span><span class="en-only">dry, Moravian country wine · Jan Stávek, Němčičky, CZ</span></div></div><span class="mi-price">130 / 590</span></div>
           </div>
-        </div>
-        <div>
           <div class="menu-cat">
-            <p class="cat-title"><span class="cz-only">— Červené víno · 1,5 dl / láhev —</span><span class="en-only">— Red wine · 1.5 dl / bottle —</span></p>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Rioja</div><div class="mi-desc"><span class="cz-only">suché, Španělsko · Vina Real</span><span class="en-only">dry, Spain · Vina Real</span></div></div><span class="mi-price">130 / 590</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Merlot</div><div class="mi-desc"><span class="cz-only">suché, pozdní sběr · vinařství Georgias Ilias, Pavlov, ČR</span><span class="en-only">dry, late harvest · Georgias Ilias winery, Pavlov, CZ</span></div></div><span class="mi-price">125 / 550</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Pinot Noir Merlot</div><div class="mi-desc"><span class="cz-only">suché, moravské zemské víno · Gala vinařství, Bavory u Mikulova, ČR</span><span class="en-only">dry, Moravian country wine · Gala winery, Bavory u Mikulova, CZ</span></div></div><span class="mi-price">– / 970</span></div>
-          </div>
-          <div class="menu-cat">
-            <p class="cat-title"><span class="cz-only">— Bublinky · 1,5 dl / láhev —</span><span class="en-only">— Sparkling wine · 1.5 dl / bottle —</span></p>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Prosecco</div><div class="mi-desc"><span class="cz-only">brut, CHOP prosecco · La Marca, Treviso, Itálie</span><span class="en-only">brut, CHOP prosecco · La Marca, Treviso, Italy</span></div></div><span class="mi-price">125 / 570</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Cava Hoya</div><div class="mi-desc"><span class="cz-only">brut nature, bez zbytkového cukru · Hoya de Cadenas, Španělsko</span><span class="en-only">brut nature, zero dosage · Hoya de Cadenas, Spain</span></div></div><span class="mi-price">140 / 640</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Dignitat Cava</div><div class="mi-desc"><span class="cz-only">organic brut nature, Katalánsko</span><span class="en-only">organic brut nature, Catalonia</span></div></div><span class="mi-price">– / 590</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Pinot a Ryzlink</div><div class="mi-desc"><span class="cz-only">bílé bubliny, extra brut · Gala Vinařství, Bavory u Mikulova, ČR</span><span class="en-only">white sparkling, extra brut · Gala Winery, Bavory u Mikulova, CZ</span></div></div><span class="mi-price">– / 980</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Pinot a Pinot Rosé</div><div class="mi-desc"><span class="cz-only">růžové, extra brut · Gala Vinařství, Bavory u Mikulova, ČR</span><span class="en-only">rosé, extra brut · Gala Winery, Bavory u Mikulova, CZ</span></div></div><span class="mi-price">– / 980</span></div>
+            <p class="cat-title"><span class="cz-only">— Bublinky · 1,5 dl / láhev —</span><span class="en-only">— Bubbles · 1.5 dl / bottle —</span></p>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Prosecco</div><div class="mi-desc"><span class="cz-only">brut, CHOP prosecco · La Marca, Treviso, Itálie</span><span class="en-only">brut, PDO prosecco · La Marca, Treviso, Italy</span></div></div><span class="mi-price">125 / 570</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Cava Hoya</div><div class="mi-desc"><span class="cz-only">brut nature, bez zbytkového cukru · Hoya de Cadenas, Španělsko</span><span class="en-only">brut nature, no residual sugar · Hoya de Cadenas, Spain</span></div></div><span class="mi-price">140 / 640</span></div>
           </div>
           <p class="menu-note">
             <span class="cz-only">Karafa vody a miska malého občerstvení k lahvi vína jsou samozřejmostí.</span>
             <span class="en-only">A carafe of water and small snacks are always included with a bottle of wine.</span>
+          </p>
+        </div>
+        <div>
+          <div class="menu-cat">
+            <p class="cat-title"><span class="cz-only">— Prkýnka · sharing is caring —</span><span class="en-only">— Boards · sharing is caring —</span></p>
+            <div class="mi"><div class="mi-left">
+              <div class="mi-name"><span class="cz-only">Lōkahi prkno pro 1 osobu</span><span class="en-only">Lōkahi board for 1</span></div>
+              <div class="mi-desc"><span class="cz-only">1 druh sýru 60 g, 1 druh uzeniny 60 g, čerstvé pečivo, ovoce, oříšky, olivy, chutney / marmeláda, olivový olej</span><span class="en-only">1 kind of cheese 60 g, 1 kind of charcuterie 60 g, fresh bread &amp; pastry, fruit, nuts, olives, chutney / jam, olive oil</span></div>
+            </div><span class="mi-price">300</span></div>
+            <div class="mi"><div class="mi-left">
+              <div class="mi-name"><span class="cz-only">Lōkahi prkno pro 2 osoby</span><span class="en-only">Lōkahi board for 2</span></div>
+              <div class="mi-desc"><span class="cz-only">2 druhy sýrů 60 g, 2 druhy uzenin 60 g, čerstvé pečivo, ovoce, oříšky, olivy, chutney / marmeláda, olivový olej</span><span class="en-only">2 kinds of cheese 60 g, 2 kinds of charcuterie 60 g, fresh bread &amp; pastry, fruit, nuts, olives, chutney / jam, olive oil</span></div>
+            </div><span class="mi-price">550</span></div>
+            <div class="mi"><div class="mi-left">
+              <div class="mi-name"><span class="cz-only">Lōkahi prkno pro 4 osoby</span><span class="en-only">Lōkahi board for 4</span></div>
+              <div class="mi-desc"><span class="cz-only">4 druhy sýrů 60 g, 4 druhy uzenin 60 g, čerstvé pečivo, ovoce, oříšky, olivy, chutney / marmeláda, olivový olej</span><span class="en-only">4 kinds of cheese 60 g, 4 kinds of charcuterie 60 g, fresh bread &amp; pastry, fruit, nuts, olives, chutney / jam, olive oil</span></div>
+            </div><span class="mi-price">950</span></div>
+          </div>
+          <div class="menu-cat">
+            <p class="cat-title"><span class="cz-only">— Tapas —</span><span class="en-only">— Tapas —</span></p>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Španělské mandličky</span><span class="en-only">Spanish almonds</span></div><div class="mi-desc"><span class="cz-only">solené / pražené</span><span class="en-only">salted / roasted</span></div></div><span class="mi-price">130</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Gordal olivy</div><div class="mi-desc"><span class="cz-only">španělské, šťavnaté, máslové</span><span class="en-only">juicy Spanish buttery olives</span></div></div><span class="mi-price">130</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Čerstvý chléb</span><span class="en-only">Fresh bread</span></div><div class="mi-desc"><span class="cz-only">olivový olej, maldonská sůl</span><span class="en-only">olive oil, Maldon salt</span></div></div><span class="mi-price">70</span></div>
+          </div>
+          <p class="menu-note">
+            <span class="cz-only">Prkýnko dle vlastního výběru — koukněte do naší vitríny a namyslete si svoje vlastní prkno, rádi vám poradíme s výběrem.</span>
+            <span class="en-only">Build your own board — have a look at our display, put together your own and we'll gladly help you choose.</span>
           </p>
         </div>
       </div>
@@ -1054,10 +1102,12 @@ html[lang="en"] .cz-only { display: none; }
         <div>
           <div class="menu-cat">
             <p class="cat-title"><span class="cz-only">— Drinky —</span><span class="en-only">— Cocktails —</span></p>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Sedmero spritz</div><div class="mi-desc"><span class="cz-only">200 ml · J. Stávek vermouth rosé, grepový fresh, tonic</span><span class="en-only">200 ml · J. Stávek rosé vermouth, grapefruit fresh, tonic</span></div></div><span class="mi-price">210</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Sedmero punč</div><div class="mi-desc"><span class="cz-only">200 ml · J. Stávek vermouth suchý, broskvový nektar, prosecco</span><span class="en-only">200 ml · J. Stávek dry vermouth, peach nectar, prosecco</span></div></div><span class="mi-price">210</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Primavera</div><div class="mi-desc"><span class="cz-only">200 ml · grepový fresh a prosecco</span><span class="en-only">200 ml · grapefruit fresh &amp; prosecco</span></div></div><span class="mi-price">150</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Pink mimosa</div><div class="mi-desc"><span class="cz-only">200 ml · grepový fresh a prosecco</span><span class="en-only">200 ml · grapefruit fresh &amp; prosecco</span></div></div><span class="mi-price">150</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Mimosa</div><div class="mi-desc"><span class="cz-only">200 ml · pomerančový fresh a prosecco</span><span class="en-only">200 ml · orange fresh &amp; prosecco</span></div></div><span class="mi-price">150</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Espresso martini</div></div><span class="mi-price">200</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Aperol spritz</div></div><span class="mi-price">180</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Sarti spritz</div></div><span class="mi-price">200</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Hugo spritz</div></div><span class="mi-price">150</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Campari spritz</div><div class="mi-desc">200 ml</div></div><span class="mi-price">180</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Campari a pomerančový fresh</span><span class="en-only">Campari &amp; orange fresh</span></div><div class="mi-desc">240 ml</div></div><span class="mi-price">180</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Campari s ledem a pomerančem</span><span class="en-only">Campari on ice with orange</span></div><div class="mi-desc">100 ml</div></div><span class="mi-price">120</span></div>
@@ -1069,8 +1119,11 @@ html[lang="en"] .cz-only { display: none; }
             <p class="cat-title"><span class="cz-only">— Pivo —</span><span class="en-only">— Beer —</span></p>
             <div class="mi"><div class="mi-left"><div class="mi-name">Corona s limetkou</div><div class="mi-desc">355 ml</div></div><span class="mi-price">85</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Pilsner Urquell</div><div class="mi-desc">330 ml</div></div><span class="mi-price">65</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Gösser Radler</div><div class="mi-desc"><span class="cz-only">330 ml · rakouské pivo a čerstvá citronová šťáva v lahvi</span><span class="en-only">330 ml · Austrian beer with fresh lemon juice in bottle</span></div></div><span class="mi-price">70</span></div>
           </div>
+          <p class="menu-note">
+            <span class="cz-only">Alergeny na vyžádání u obsluhy.</span>
+            <span class="en-only">Allergen info on request.</span>
+          </p>
         </div>
       </div>
     </div>
@@ -1081,9 +1134,9 @@ html[lang="en"] .cz-only { display: none; }
         <div>
           <div class="menu-cat">
             <p class="cat-title"><span class="cz-only">— Na zahřátí —</span><span class="en-only">— Hot drinks —</span></p>
-            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Čaj</span><span class="en-only">Tea</span></div><div class="mi-desc"><span class="cz-only">250 ml · z naší směsi bylinek z Bílých Karpat</span><span class="en-only">250 ml · from our herb blend from the White Carpathians</span></div></div><span class="mi-price">85</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Konvice čaje</span><span class="en-only">Pot of tea</span></div><div class="mi-desc"><span class="cz-only">800 ml · z naší směsi bylinek z Bílých Karpat</span><span class="en-only">800 ml · from our herb blend from the White Carpathians</span></div></div><span class="mi-price">120</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Výběrový čaj</span><span class="en-only">Selection tea</span></div><div class="mi-desc">250 ml · Harney and Sons</div></div><span class="mi-price">90</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Čaj</span><span class="en-only">Tea</span></div><div class="mi-desc">250 ml · Family Herbal Tea</div></div><span class="mi-price">85</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Konvice čaje</span><span class="en-only">Pot of tea</span></div><div class="mi-desc">800 ml · Family Herbal Tea</div></div><span class="mi-price">120</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Výběrový čaj</span><span class="en-only">Specialty tea</span></div><div class="mi-desc">250 ml · Harney and Sons</div></div><span class="mi-price">90</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Teplý jablečný mošt</span><span class="en-only">Warm apple juice</span></div><div class="mi-desc">200 ml</div></div><span class="mi-price">80</span></div>
           </div>
           <div class="menu-cat">
@@ -1091,7 +1144,8 @@ html[lang="en"] .cz-only { display: none; }
             <div class="mi"><div class="mi-left"><div class="mi-name">Fresh juice</div><div class="mi-desc"><span class="cz-only">200 ml · pomeranč / grep / mix</span><span class="en-only">200 ml · orange / grapefruit / mix</span></div></div><span class="mi-price">95</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Oranžáda / greponáda</span><span class="en-only">Orangeade / grapefruitade</span></div><div class="mi-desc"><span class="cz-only">400 ml · čerstvý ovocný džus a perlivá voda</span><span class="en-only">400 ml · fresh fruit juice &amp; sparkling water</span></div></div><span class="mi-price">80</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Mango bio juice</div><div class="mi-desc">200 ml</div></div><span class="mi-price">80</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Jablečný mošt</span><span class="en-only">Apple juice</span></div><div class="mi-desc">200 ml</div></div><span class="mi-price">70</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Jablečný mošt</span><span class="en-only">Cloudy apple juice</span></div><div class="mi-desc">200 ml</div></div><span class="mi-price">70</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Hruškový mošt</span><span class="en-only">Cloudy pear juice</span></div><div class="mi-desc">200 ml</div></div><span class="mi-price">70</span></div>
           </div>
         </div>
         <div>
@@ -1101,12 +1155,13 @@ html[lang="en"] .cz-only { display: none; }
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Domácí limonáda</span><span class="en-only">House lemonade</span></div><div class="mi-desc"><span class="cz-only">400 ml · z farmářských sirupů z Vysočiny, s ovocem</span><span class="en-only">400 ml · farm syrups from Vysočina, with fresh fruit</span></div></div><span class="mi-price">85</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Coca Cola</div><div class="mi-desc"><span class="cz-only">200 ml · s ledem a citronem</span><span class="en-only">200 ml · with ice &amp; lemon</span></div></div><span class="mi-price">70</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Tonic</div><div class="mi-desc">200 ml</div></div><span class="mi-price">75</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name">Soda zitron</div><div class="mi-desc"><span class="cz-only">400 ml · sodovka s čerstvou citronovou šťávou — nejlepší na žízeň, bez cukru</span><span class="en-only">400 ml · sparkling water with fresh lemon juice — best thirst-quencher, sugar-free</span></div></div><span class="mi-price">50</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">San Pellegrino</div><div class="mi-desc"><span class="cz-only">330 ml · italská ovocná limonáda v plechovce</span><span class="en-only">330 ml · Italian fruit lemonade in a can</span></div></div><span class="mi-price">60</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Almdudler</div><div class="mi-desc"><span class="cz-only">330 ml · rakouská bylinná limonáda, 32 alpských bylin</span><span class="en-only">330 ml · Austrian herbal lemonade, 32 Alpine herbs</span></div></div><span class="mi-price">75</span></div>
-            <div class="mi"><div class="mi-left"><div class="mi-name">Vincentka</div><div class="mi-desc">250 ml</div></div><span class="mi-price">55</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name">Crodino</div><div class="mi-desc"><span class="cz-only">175 ml · s ledem a pomerančem</span><span class="en-only">175 ml · with ice &amp; orange</span></div></div><span class="mi-price">80</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Nealko pivo</span><span class="en-only">Non-alcoholic beer</span></div><div class="mi-desc">330 ml</div></div><span class="mi-price">75</span></div>
             <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Karafa vody</span><span class="en-only">Carafe of water</span></div><div class="mi-desc">750 ml</div></div><span class="mi-price">40</span></div>
+            <div class="mi"><div class="mi-left"><div class="mi-name"><span class="cz-only">Sklenice vody</span><span class="en-only">Glass of water</span></div><div class="mi-desc"><span class="cz-only">400 ml · samostatně</span><span class="en-only">400 ml · on its own</span></div></div><span class="mi-price">15</span></div>
           </div>
         </div>
       </div>
@@ -1206,7 +1261,7 @@ html[lang="en"] .cz-only { display: none; }
         </div>
         <div class="hours-row">
           <span class="hours-day"><span class="cz-only">Neděle</span><span class="en-only">Sunday</span></span>
-          <span class="hours-time">9:00 – 18:00</span>
+          <span class="hours-time"><span class="cz-only">Zavřeno</span><span class="en-only">Closed</span></span>
         </div>
       </div>
 
@@ -1277,8 +1332,8 @@ html[lang="en"] .cz-only { display: none; }
 <!-- GEO PROSE — factual entity paragraph for AI crawler indexing -->
 <article aria-label="About LŌKAHI" style="max-width:1120px;margin:0 auto;padding:3rem 3.5rem 1rem;border-top:1px solid rgba(150,124,100,0.12);">
   <p style="font-size:0.72rem;color:var(--taupe);line-height:1.85;font-family:var(--sans);font-weight:300;">
-    <span class="cz-only">LŌKAHI je kavárna, wine bar a store na adrese Jiráskova 15, 602 00 Brno, Česká republika (IČO: 24602299). Podnik se specializuje na specialty kávu od výběrových pražičů — QB Coffee Roastery a The Naughty Dog Coffee Roastery — a na moravská a evropská vína od vinařství jako Georgias Ilias z Pavlova, Gala Vinařství z Bavor u Mikulova a Jan Stávek z Němčiček. Snídaně jsou podávány každý den od 8:00 do 13:00 a zahrnují suroviny od místních producentů: vejce z farmy Valcha, chléb z pekárny Chleba Brno a šunku od Kloudů. LŌKAHI má venkovní terasu, přijímá rezervace na telefonním čísle +420 737 899 827 nebo e-mailem na reservations@lokahi.cz a je otevřeno pondělí–úterý 8:30–20:00, středa–pátek 8:30–22:00, sobota 9:00–22:00, neděle 9:00–18:00. Název kavárny pochází z havajského slova označujícího jednotu, harmonii a rovnováhu.</span>
-    <span class="en-only">LŌKAHI is a café, wine bar and store located at Jiráskova 15, 602 00 Brno, Czech Republic. The venue specialises in specialty coffee from selected roasters — QB Coffee Roastery and The Naughty Dog Coffee Roastery — and in Moravian and European wines from producers including Georgias Ilias from Pavlov, Gala Winery from Bavory u Mikulova, and Jan Stávek from Němčičky. Breakfast is served daily from 8:00 to 13:00 and features ingredients from local producers: eggs from Farma Valcha, bread from Chleba Brno bakery, and ham from Kloudů. LŌKAHI has outdoor terrace seating, accepts reservations at +420 737 899 827 or reservations@lokahi.cz, and is open Monday–Tuesday 8:30–20:00, Wednesday–Friday 8:30–22:00, Saturday 9:00–22:00, Sunday 9:00–18:00. The name comes from a Hawaiian word meaning unity, harmony and balance.</span>
+    <span class="cz-only">LŌKAHI je kavárna, wine bar a store na adrese Jiráskova 15, 602 00 Brno, Česká republika (IČO: 24602299). Podnik se specializuje na specialty kávu od výběrových pražičů — QB Coffee Roastery a The Naughty Dog Coffee Roastery — a na evropská vína od vinařství jako Hirtl z rakouského Poysdorfu, Plenér z Pavlova a Jan Stávek z Němčiček. K vínu nabízí sdílená prkýnka se sýry a uzeninami a tapas. Snídaně jsou podávány od 8:30 do 13:00 a zahrnují suroviny od místních producentů: vejce z farmy Valcha, chléb z pekárny Chleba Brno a šunku od Kloudů. LŌKAHI má venkovní terasu, přijímá rezervace na telefonním čísle +420 737 899 827 nebo e-mailem na reservations@lokahi.cz a je otevřeno pondělí–úterý 8:30–20:00, středa–pátek 8:30–22:00, sobota 9:00–22:00; v neděli je zavřeno. Název kavárny pochází z havajského slova označujícího jednotu, harmonii a rovnováhu.</span>
+    <span class="en-only">LŌKAHI is a café, wine bar and store located at Jiráskova 15, 602 00 Brno, Czech Republic. The venue specialises in specialty coffee from selected roasters — QB Coffee Roastery and The Naughty Dog Coffee Roastery — and in European wines from producers including Hirtl from Poysdorf, Austria, Plenér from Pavlov, and Jan Stávek from Němčičky. Sharing boards with cheese and charcuterie and tapas are served alongside the wine. Breakfast is served from 8:30 to 13:00 and features ingredients from local producers: eggs from Farma Valcha, bread from Chleba Brno bakery, and ham from Kloudů. LŌKAHI has outdoor terrace seating, accepts reservations at +420 737 899 827 or reservations@lokahi.cz, and is open Monday–Tuesday 8:30–20:00, Wednesday–Friday 8:30–22:00, and Saturday 9:00–22:00; closed on Sundays. The name comes from a Hawaiian word meaning unity, harmony and balance.</span>
   </p>
 </article>
 
