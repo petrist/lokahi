@@ -1,0 +1,3 @@
+[build]
+  publish = "."
+  command = "rm -f *.docx lokahi-6.html"
