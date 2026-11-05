@@ -1,0 +1,11 @@
+# Netlify publishes only the site/ folder. Everything else in this repo
+# (drafts/, docs/, archive/) stays private.
+[build]
+  publish = "site"
+
+# The homepage used to be uploaded twice, as index.html and lokahi.html.
+# Keep old links to /lokahi.html working.
+[[redirects]]
+  from = "/lokahi.html"
+  to = "/"
+  status = 301
