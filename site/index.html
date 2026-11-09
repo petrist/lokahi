@@ -195,9 +195,7 @@
 </script>
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='9' y='4' width='14' height='2.5' rx='1.25' fill='%23121410'/><ellipse cx='16' cy='21' rx='8.5' ry='9' fill='none' stroke='%23121410' stroke-width='2.5'/></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
 <style>
 :root {
   --dark:   #121410;
@@ -757,6 +755,41 @@ html[lang="en"] .cz-only { display: none; }
   display: block;
   filter: grayscale(30%) contrast(1.05);
 }
+.map-consent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--cream);
+}
+.map-consent-address {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+.map-consent-btn {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: transparent;
+  border: 1px solid var(--dark);
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.map-consent-btn:hover { background: var(--dark); color: var(--white); }
+.map-consent-note { font-size: 0.72rem; color: var(--taupe); line-height: 1.7; }
+.map-consent-note a { color: var(--taupe); }
+.map-consent-note a:hover { color: var(--olive); }
+.footer-link { text-decoration: none; transition: color 0.2s; color: rgba(232,221,208,0.45); }
+.footer-link:hover { color: var(--linen); }
 .contact-bottom {
   display: flex;
   gap: 5rem;
@@ -1298,14 +1331,19 @@ html[lang="en"] .cz-only { display: none; }
 
     </div>
 
-    <!-- MAP -->
-    <div class="map-wrap fade-up">
-      <iframe
-        src="https://maps.google.com/maps?q=49.2010414,16.5961622&z=16&output=embed"
-        allowfullscreen
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="LŌKAHI location"></iframe>
+    <!-- MAP: loads from Google only after a click, so the page itself sends nothing to Google -->
+    <div class="map-wrap fade-up" id="map-wrap">
+      <div class="map-consent">
+        <p class="map-consent-address">Jiráskova 15, Brno</p>
+        <button type="button" class="map-consent-btn" onclick="loadMap()">
+          <span class="cz-only">Zobrazit mapu</span>
+          <span class="en-only">Show map</span>
+        </button>
+        <p class="map-consent-note">
+          <span class="cz-only">Mapa se načte z Google Maps (<a href="/ochrana-osobnich-udaju/#mapa">více</a>) · <a href="https://maps.google.com/?cid=11834286826099568136" target="_blank" rel="noopener">Otevřít v Google Mapách</a></span>
+          <span class="en-only">The map loads from Google Maps (<a href="/ochrana-osobnich-udaju/#mapa">details</a>) · <a href="https://maps.google.com/?cid=11834286826099568136" target="_blank" rel="noopener">Open in Google Maps</a></span>
+        </p>
+      </div>
     </div>
 
     <!-- ALLERGENS + IČO -->
@@ -1342,6 +1380,7 @@ html[lang="en"] .cz-only { display: none; }
   <span class="footer-logo">LŌKAHI</span>
   <span class="footer-text">– better together –</span>
   <span class="footer-text">Brno, Czech Republic</span>
+  <a href="/ochrana-osobnich-udaju/" class="footer-text footer-link"><span class="cz-only">Ochrana osobních údajů</span><span class="en-only">Privacy</span></a>
 </footer>
 
 <script>
@@ -1384,6 +1423,12 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
 // Language toggle
 let currentLang = 'cs';
+function loadMap() {
+  document.getElementById('map-wrap').innerHTML =
+    '<iframe src="https://maps.google.com/maps?q=49.2010414,16.5961622&z=16&output=embed" ' +
+    'allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="LŌKAHI location"></iframe>';
+}
+
 function toggleLang() {
   currentLang = currentLang === 'cs' ? 'en' : 'cs';
     document.getElementById('html-root').lang = currentLang;

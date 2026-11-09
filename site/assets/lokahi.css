@@ -125,6 +125,8 @@ footer {
   text-decoration: none;
 }
 .footer-text { font-size: 0.68rem; letter-spacing: 0.1em; color: rgba(232,221,208,0.3); }
+.footer-link { text-decoration: none; transition: color 0.2s; color: rgba(232,221,208,0.45); }
+.footer-link:hover { color: var(--linen); }
 
 /* ── FADE-IN ────────────────────────────── */
 .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.9s ease, transform 0.9s ease; }
@@ -248,6 +250,14 @@ img.article-hero { display: block; }
 .prose p { font-size: 1.02rem; color: #33312a; margin-bottom: 1.2rem; }
 .prose p.lead { font-family: var(--serif); font-style: italic; font-size: 1.3rem; color: var(--taupe); line-height: 1.55; }
 .prose strong { font-weight: 500; }
+.prose h3 { font-family: var(--serif); font-weight: 500; font-size: 1.3rem; margin: 1.9rem 0 0.6rem; line-height: 1.25; }
+.prose ul { margin: 0 0 1.2rem 1.2rem; }
+.prose li { font-size: 1.02rem; color: #33312a; margin-bottom: 0.45rem; line-height: 1.7; }
+.prose a { color: var(--olive); text-underline-offset: 0.18em; }
+.prose a:hover { color: var(--dark); }
+.legal-meta { font-size: 0.86rem; color: var(--taupe); margin-top: 1.25rem; }
+.wrap.legal-page { padding-bottom: 6rem; }
+.nowrap { white-space: nowrap; }
 .signoff {
   font-family: var(--serif);
   font-style: italic;
