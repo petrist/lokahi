@@ -37,8 +37,8 @@ Písmo Jost (bezpatkové) nemá správný znak ō. Název **Lōkahi** proto piš
 - [ ] Interně: ceny setupů (nealko, alko, free flow) a minimum hostů, abyste mohli posílat nabídky. Na web nepatří.
 - [ ] Volitelně: storno podmínky.
 
-## Po zveřejnění
+## Stav po zveřejnění (15. 11. 2026)
 
-1. V Netlify: **Forms → Enable form detection** a v **Form notifications** nastavte e-mail na reservations@lokahi.cz. Bez toho formulář poptávky nikam nedorazí. Pak udělejte nový deploy (Deploys → Trigger deploy), aby Netlify formulář našel.
-2. Odešlete jednu zkušební poptávku a zkontrolujte, že dorazila.
-3. Po Vánocích odstraňte pruh `#vecirky` a položku „Večírky“ z menu na `site/index.html`.
+- Netlify nasazuje z větve `main` (do 15. 11. byla produkční větev `production`, proto se změny z `main` na web nedostávaly). Větev `production` na GitHubu zůstala jen jako záloha.
+- Formuláře jsou zapnuté, formulář `vanocni-vecirek` Netlify našel a zkušební poptávka prošla. Upozornění chodí na reservations@lokahi.cz až po potvrzení odkazu v e-mailu od Netlify. Zkušební poptávku (firma „TEST – zkušební poptávka“) můžete v Netlify → Forms smazat.
+- Po Vánocích odstraňte pruh `#vecirky` a položku „Večírky“ z menu na `site/index.html`.
