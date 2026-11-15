@@ -7,6 +7,7 @@ Only the `site/` folder is published; `netlify.toml` sets that.
 |------------|----------------------------------------------------------------------------|-----------|
 | `site/`    | The website, exactly as served on lokahi.cz                                | Yes       |
 | `drafts/`  | "Věci, které milujeme" articles not yet published, and the hub page with their cards | No |
+| `marketing/` | Print and social materials (flyers, Instagram, e-mail copy); see `marketing/vanocni-vecirky/README.md` | No |
 | `docs/`    | Content briefs (.docx)                                                     | No        |
 | `archive/` | Old homepage draft (`lokahi-6.html`)                                       | No        |
 

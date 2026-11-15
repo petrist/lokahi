@@ -1,0 +1,27 @@
+/* LŌKAHI · Vánoční večírky: shared tokens for the flyer and Instagram graphics.
+   Same palette and type as lokahi.cz, plus one winter accent (--wine). */
+@import url("fonts/fonts.css");
+
+:root {
+  --dark:  #121410;
+  --olive: #5B5916;
+  --taupe: #967C64;
+  --linen: #E8DDD0;
+  --cream: #F0EAE0;
+  --white: #FAFAF8;
+  --wine:  #6E2430;
+  --ink:   #33312a;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'Jost', 'Helvetica Neue', sans-serif;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { background: var(--cream); color: var(--dark); font-family: var(--sans); font-weight: 300; }
+img { display: block; }
+
+.wordmark { font-family: var(--serif); font-weight: 400; letter-spacing: 0.28em; }
+.label { font-family: var(--sans); font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase; color: var(--taupe); }
+.serif { font-family: var(--serif); }
+.it { font-family: var(--serif); font-style: italic; }
+/* The macron as a graphic line, as on the website */
+.macron { display: block; height: 2px; background: var(--olive); }

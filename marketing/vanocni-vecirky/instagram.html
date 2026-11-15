@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>LŌKAHI · Vánoční večírky · Instagram</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+/* Open without parameters for an overview of all graphics.
+   ?s=post-1 … post-4 (1080×1350 carousel), ?s=story-1 … story-3 (1080×1920) shows one at full size for export.
+   Jost has no proper ō: the name Lōkahi only ever appears in Cormorant here. */
+body.sheet { padding: 40px; background: #d9d2c7; }
+body.sheet .grid { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; }
+body.sheet .slide { zoom: 0.32; box-shadow: 0 10px 40px rgba(0,0,0,0.18); }
+body.sheet h1.sheet-title { font-family: var(--serif); font-weight: 400; font-size: 30px; margin-bottom: 20px; }
+body.single { background: var(--cream); }
+body.single .slide { display: none; }
+body.single .slide.on { display: block; }
+body.single h1.sheet-title { display: none; }
+
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: var(--cream); }
+.slide.story { height: 1920px; }
+.slide .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.dark { background: var(--dark); color: var(--cream); }
+
+.wm { font-family: var(--serif); letter-spacing: 0.28em; font-size: 30px; }
+.lbl { font-family: var(--sans); font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase; color: var(--taupe); font-size: 22px; }
+.h { font-family: var(--serif); font-weight: 400; line-height: 0.98; letter-spacing: -0.01em; }
+.sub { font-family: var(--serif); font-style: italic; color: var(--wine); }
+.bar { display: block; width: 70px; height: 3px; background: var(--olive); }
+
+/* post-1: cover */
+.p1 .photo { position: absolute; left: 0; right: 0; top: 0; height: 790px; }
+.p1 .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+.p1 .panel { position: absolute; left: 0; right: 0; bottom: 0; height: 560px; padding: 64px 76px 56px; display: flex; flex-direction: column; }
+.p1 .h { font-size: 104px; margin-top: 26px; }
+.p1 .sub { font-size: 50px; margin-top: 22px; }
+.p1 .row { margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; }
+.p1 .row span { font-family: var(--sans); font-size: 22px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--taupe); }
+
+.p1 .flowtag { position: absolute; left: 76px; bottom: 0; background: var(--dark); color: var(--cream); padding: 26px 34px 24px; font-family: var(--serif); font-size: 40px; line-height: 1.15; }
+.p1 .flowtag small { display: block; font-family: var(--sans); font-size: 22px; color: rgba(232,221,208,0.6); margin-top: 8px; }
+.p1 .flowtag b { display: block; font-family: var(--sans); font-weight: 400; font-size: 20px; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(232,221,208,0.65); margin-bottom: 8px; }
+
+/* post-2 / story-2: menu */
+.menu { padding: 84px 80px 0; }
+.menu .h { font-size: 76px; margin-top: 22px; }
+.menu .rows { margin-top: 46px; }
+.menu .r { display: grid; grid-template-columns: 300px 1fr; gap: 30px; padding: 26px 0; border-top: 2px solid rgba(91,89,22,0.55); }
+.menu .r h3 { font-family: var(--serif); font-weight: 500; font-size: 46px; line-height: 1.05; }
+.menu .r h3 small { display: block; font-family: var(--sans); font-weight: 400; font-size: 19px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--taupe); margin-bottom: 8px; }
+.menu .r ul { list-style: none; padding-top: 30px; }
+.menu .r li { font-size: 33px; line-height: 1.5; color: var(--ink); }
+.menu .strip { position: absolute; left: 0; right: 0; bottom: 0; height: 330px; }
+.menu .strip img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+
+/* post-3 / story-3: space + price */
+.space { padding: 90px 80px; display: flex; flex-direction: column; height: 100%; }
+.space .lbl { color: rgba(232,221,208,0.6); }
+.space .h { font-size: 92px; margin-top: 24px; color: var(--cream); }
+.space .facts { margin-top: 56px; }
+.space .f { display: grid; grid-template-columns: 250px 1fr; gap: 24px; padding: 24px 0; border-top: 1px solid rgba(232,221,208,0.22); align-items: baseline; }
+.space .f:last-child { border-bottom: 1px solid rgba(232,221,208,0.22); }
+.space .f b { font-weight: 400; font-size: 20px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(232,221,208,0.55); }
+.space .f span { font-family: var(--serif); font-size: 42px; line-height: 1.2; }
+.space .price { margin-top: auto; }
+.space .price .num { font-family: var(--serif); font-size: 132px; line-height: 1; }
+.space .price .num .od { font-size: 46px; margin-right: 14px; color: rgba(232,221,208,0.75); }
+.menu .r.flow ul li.it { font-family: var(--serif); font-style: italic; color: var(--wine); }
+.menu .r.flow h3 small { color: var(--wine); }
+.space .price .num sup { font-size: 64px; vertical-align: 52px; }
+.menu .r.flow li b { font-weight: 500; color: var(--dark); }
+.space .price .num small { font-size: 46px; margin-left: 10px; color: rgba(232,221,208,0.75); }
+.space .price p { font-size: 28px; color: rgba(232,221,208,0.7); margin-top: 18px; line-height: 1.45; }
+
+/* post-4: call to action */
+.p4 .bg { object-position: center 70%; }
+.p4 .card { position: absolute; left: 60px; right: 60px; bottom: 60px; background: var(--cream); padding: 58px 64px 54px; }
+.p4 .h { font-size: 92px; margin-top: 22px; }
+.p4 .lines { margin-top: 30px; font-size: 31px; line-height: 1.6; color: var(--ink); }
+.p4 .lines strong { font-weight: 400; color: var(--dark); }
+.p4 .row { margin-top: 34px; padding-top: 26px; border-top: 1px solid rgba(150,124,100,0.3); display: flex; justify-content: space-between; align-items: baseline; }
+.p4 .row span { font-size: 21px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--taupe); }
+
+/* story-1: cover */
+.s1 .bg { object-position: center 50%; }
+.s1 .card { position: absolute; left: 70px; right: 70px; top: 500px; background: var(--cream); padding: 70px 70px 64px; text-align: center; }
+.s1 .h { font-size: 112px; margin-top: 30px; }
+.s1 .sub { font-size: 52px; margin-top: 26px; }
+.s1 .bar { margin: 40px auto 0; }
+.s1 .meta { margin-top: 30px; font-size: 26px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--taupe); }
+.s1 .wm-top { position: absolute; top: 270px; left: 0; right: 0; text-align: center; color: var(--cream); font-size: 40px; text-shadow: 0 2px 18px rgba(0,0,0,0.35); }
+
+/* story-2: menu on a taller canvas, inside the safe zone */
+.s2 .menu { padding-top: 270px; }
+.s2 .menu .h { font-size: 84px; }
+.s2 .menu .r li { font-size: 36px; }
+.s2 .menu .strip { height: 560px; bottom: 0; }
+
+/* story-3: space + price, room for the link sticker at the bottom */
+.s3 .space { padding: 270px 80px 0; }
+.s3 .space .price { margin-top: 70px; }
+.s3 .hint { position: absolute; left: 0; right: 0; bottom: 360px; text-align: center; font-family: var(--serif); font-style: italic; font-size: 44px; color: rgba(232,221,208,0.85); }
+</style>
+</head>
+<body class="sheet">
+<h1 class="sheet-title">Instagram · vánoční večírky: carousel 4:5 (1–4) a stories 9:16 (1–3)</h1>
+<div class="grid">
+
+  <!-- POST 1: cover -->
+  <section class="slide p1" id="post-1">
+    <div class="photo"><img src="img/vecirek-chlebicky.jpeg" alt=""><p class="flowtag"><b>Cena za večer</b>od 990 Kč / osoba*<small>* bez DPH, podle zvoleného setupu</small></p></div>
+    <div class="panel">
+      <p class="lbl">Vánoce 2026 · pro firmy</p>
+      <h2 class="h">Firemní vánoční večírek v&nbsp;Lōkahi</h2>
+      <p class="sub">Výběr dobrých věcí z celého světa</p>
+      <div class="row"><span class="wm" style="color:var(--dark);letter-spacing:0.28em;font-size:28px;text-transform:none;font-family:var(--serif);">LŌKAHI</span><span>Listujte →</span></div>
+    </div>
+  </section>
+
+  <!-- POST 2: menu -->
+  <section class="slide p2" id="post-2">
+    <div class="menu">
+      <p class="lbl">Co bude na stole</p>
+      <h2 class="h">Bufet, vánoční dezerty a&nbsp;nápoje podle vás</h2>
+      <div class="rows">
+        <div class="r"><h3><small>Formou bufetu</small>Jídlo</h3><ul><li>Španělská tortilla</li><li>Sýry a kvalitní uzeniny</li><li>Chlebíčky několika druhů</li><li>Domácí empanadas</li></ul></div>
+        <div class="r"><h3><small>Sladké</small>Dezerty</h3><ul><li>Baskický cheesecake</li><li>Česká vánočka a koláče</li></ul></div>
+        <div class="r flow"><h3><small>Vyberete si</small>Nápoje</h3><ul><li><b>Nealko</b> · limonády, káva, čaj</li><li><b>Alko</b> · víno, pivo, prosecco</li><li><b>Free flow</b> · pití se nepočítá</li></ul></div>
+      </div>
+      <div class="strip"><img src="img/vecirek-prkenko-velke.jpeg" alt="" style="object-position:center 62%;"></div>
+    </div>
+  </section>
+
+  <!-- POST 3: space + price -->
+  <section class="slide p3 dark" id="post-3">
+    <div class="space">
+      <p class="lbl">Prostor a cena</p>
+      <h2 class="h">Celé Lōkahi jen pro&nbsp;váš tým</h2>
+      <div class="facts">
+        <div class="f"><b>Kapacita</b><span>až 25 hostů</span></div>
+        <div class="f"><b>U stolu</b><span>18 míst, pro víc hostů bufet ve stoje</span></div>
+        <div class="f"><b>Kdy</b><span>každý den v prosinci, 19–24 h</span></div>
+        <div class="f"><b>Nápoje</b><span>nealko, alko, nebo free flow</span></div>
+        <div class="f"><b>Kde</b><span>Jiráskova 15, Brno</span></div>
+      </div>
+      <div class="price">
+        <p class="num"><span class="od">od</span>990 Kč<small>/ osoba a večer*</small></p>
+        <p>* Cena bez DPH. Konečná cena podle zvoleného setupu a počtu hostů.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POST 4: call to action -->
+  <section class="slide p4" id="post-4">
+    <img class="bg" src="img/vecirek-interier.jpeg" alt="" style="object-position:center 20%;">
+    <div class="card">
+      <p class="lbl">Poptávka</p>
+      <h2 class="h">Domluvte si termín</h2>
+      <p class="lines">Odkaz na nabídku a formulář najdete v&nbsp;bio.<br><strong>reservations@lokahi.cz</strong> · <strong>+420 737 899 827</strong></p>
+      <div class="row"><span style="font-family:var(--serif);font-size:28px;letter-spacing:0.28em;text-transform:none;color:var(--dark);">LŌKAHI</span><span>lokahi.cz/vanocni-vecirky</span></div>
+    </div>
+  </section>
+
+  <!-- STORY 1 -->
+  <section class="slide story s1" id="story-1">
+    <img class="bg" src="img/vecirek-chlebicky.jpeg" alt="">
+    <div class="card">
+      <p class="wm" style="font-size:34px;margin-bottom:34px;">LŌKAHI</p>
+      <p class="lbl">Vánoce 2026 · pro firmy</p>
+      <h2 class="h">Firemní vánoční večírek</h2>
+      <p class="sub">Výběr dobrých věcí z celého světa</p>
+      <span class="bar"></span>
+      <p class="meta">Celý podnik jen pro vás · až 25 hostů</p>
+    </div>
+  </section>
+
+  <!-- STORY 2 -->
+  <section class="slide story s2" id="story-2">
+    <div class="menu">
+      <p class="lbl">Co bude na stole</p>
+      <h2 class="h">Bufet, vánoční dezerty a&nbsp;nápoje podle vás</h2>
+      <div class="rows">
+        <div class="r"><h3><small>Formou bufetu</small>Jídlo</h3><ul><li>Španělská tortilla</li><li>Sýry a kvalitní uzeniny</li><li>Chlebíčky několika druhů</li><li>Domácí empanadas</li></ul></div>
+        <div class="r"><h3><small>Sladké</small>Dezerty</h3><ul><li>Baskický cheesecake</li><li>Česká vánočka</li><li>České koláče</li></ul></div>
+        <div class="r flow"><h3><small>Vyberete si</small>Nápoje</h3><ul><li><b>Nealko</b> · limonády, nealko, káva a čaj</li><li><b>Alko</b> · k tomu víno, pivo a prosecco</li><li><b>Free flow</b> · pití se celý večer nepočítá</li></ul></div>
+      </div>
+      <div class="strip"><img src="img/vecirek-prkenko-velke.jpeg" alt="" style="object-position:center 62%;"></div>
+    </div>
+  </section>
+
+  <!-- STORY 3 -->
+  <section class="slide story s3 dark" id="story-3">
+    <div class="space">
+      <p class="lbl">Prostor a cena</p>
+      <h2 class="h">Celé Lōkahi jen pro&nbsp;váš tým</h2>
+      <div class="facts">
+        <div class="f"><b>Kapacita</b><span>až 25 hostů</span></div>
+        <div class="f"><b>U stolu</b><span>18 míst</span></div>
+        <div class="f"><b>Kdy</b><span>každý den v prosinci, 19–24 h</span></div>
+        <div class="f"><b>Nápoje</b><span>nealko, alko, nebo free flow</span></div>
+      </div>
+      <div class="price">
+        <p class="num"><span class="od">od</span>990 Kč<small>/ osoba a večer*</small></p>
+        <p>* Cena bez DPH. Konečná cena podle zvoleného setupu a počtu hostů.</p>
+      </div>
+    </div>
+    <p class="hint">Termín poptáte přes odkaz ↓</p>
+  </section>
+
+</div>
+<script>
+  var m = location.search.match(/[?&]s=([\w-]+)/);
+  if (m && document.getElementById(m[1])) {
+    document.body.className = 'single';
+    document.getElementById(m[1]).classList.add('on');
+  }
+</script>
+</body>
+</html>
