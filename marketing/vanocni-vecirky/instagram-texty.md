@@ -1,6 +1,6 @@
 # Instagram: kampaň Vánoční večírky pro firmy
 
-Grafiky jsou v `out/`: carousel `ig-post-1…4.png` (1080 × 1350) a stories `ig-story-1…3.png` (1080 × 1920).
+Grafiky jsou v `out/`: carousel `ig-post-1…4.png` (1080 × 1350) a stories `ig-story-1…3.png` (1080 × 1920). Na Google Drive jsou to soubory 10–13 a 20–22.
 Náhled všech najednou: otevřete `instagram.html` v prohlížeči.
 
 Oslovujeme ve 2. osobě množného čísla („vy“), stejně jako na webu a v e-mailu. Na Instagramu to zní, jako bychom mluvili k celému týmu.

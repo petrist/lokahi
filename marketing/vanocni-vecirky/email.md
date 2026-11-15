@@ -1,6 +1,6 @@
 # E-mail: nabídka vánočního večírku pro firmy
 
-Příloha: `out/lokahi-vanocni-vecirek-A5.pdf`. Odkaz v textu začne fungovat až po zveřejnění stránky.
+Příloha: `out/lokahi-vanocni-vecirek-A5.pdf` (na Google Drive „02 Leták A5 – do e-mailu.pdf“). Stránka www.lokahi.cz/vanocni-vecirky je zveřejněná, odkaz funguje.
 
 > **Než to rozešlete:** v Česku zákon č. 480/2004 Sb. zakazuje posílat obchodní sdělení e-mailem bez předchozího souhlasu, a to i firmám. Bez souhlasu smíte psát jen svým dosavadním zákazníkům, a to s možností odhlášení (je na konci e-mailu). Nejbezpečnější cestou jsou lidé a firmy, které u vás už byly, nebo osobně napsaný e-mail konkrétnímu člověku. Plošné rozesílání na cizí adresy `info@` raději ne.
 
