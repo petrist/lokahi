@@ -873,6 +873,7 @@ html[lang="en"] .cz-only { display: none; }
       <li><a href="#menu">Menu</a></li>
       <li><a href="#about"><span class="cz-only">O nás</span><span class="en-only">About</span></a></li>
       <li><a href="/veci-ktere-milujeme/"><span class="cz-only">Milujeme</span><span class="en-only">We love</span></a></li>
+      <li><a href="/vanocni-vecirky/"><span class="cz-only">Večírky</span><span class="en-only">Parties</span></a></li>
       <li><a href="#contact"><span class="cz-only">Kontakt</span><span class="en-only">Contact</span></a></li>
     </ul>
     <button class="lang-toggle" id="lang-btn" onclick="toggleLang()" aria-label="Switch language">EN</button>
@@ -1200,6 +1201,38 @@ html[lang="en"] .cz-only { display: none; }
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- VÁNOČNÍ VEČÍRKY — seasonal teaser (remove after Christmas 2026) -->
+<style>
+  #vecirky { background: var(--dark); color: var(--cream); padding: 6rem 3.5rem; }
+  .xmas-inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center; }
+  .xmas-k { font-size: 0.68rem; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(232,221,208,0.6); }
+  .xmas-title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 4.5vw, 3.4rem); line-height: 1.06; margin: 1rem 0 1.25rem; }
+  .xmas-text { font-size: 0.98rem; color: rgba(240,234,224,0.8); max-width: 46ch; line-height: 1.7; }
+  .xmas-price { font-family: var(--serif); font-size: 1.6rem; margin-top: 1.5rem; }
+  .xmas-price small { font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.06em; color: rgba(232,221,208,0.6); margin-left: 0.4rem; }
+  .xmas-link { display: inline-block; margin-top: 2rem; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--dark); background: var(--cream); padding: 0.95rem 1.6rem; border: 1px solid var(--cream); transition: background 0.25s, color 0.25s; }
+  .xmas-link:hover { background: transparent; color: var(--cream); }
+  .xmas-photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 35%; }
+  @media (max-width: 820px) {
+    #vecirky { padding: 5rem 1.5rem; }
+    .xmas-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .xmas-photo { aspect-ratio: 4 / 3; }
+  }
+</style>
+<section id="vecirky">
+  <div class="xmas-inner">
+    <div class="fade-up">
+      <p class="xmas-k"><span class="cz-only">Vánoce 2026 · pro firmy</span><span class="en-only">Christmas 2026 · for companies</span></p>
+      <h2 class="xmas-title"><span class="cz-only">Firemní vánoční večírek</span><span class="en-only">Your team's Christmas party</span></h2>
+      <p class="xmas-text cz-only">Na jeden večer zavřeme podnik pro ostatní hosty a celý bude jen pro váš tým. Bufet s výběrem dobrých věcí z celého světa, vánoční dezerty a nápoje podle vás. Až 25 hostů, každý den v prosinci.</p>
+      <p class="xmas-text en-only">For one evening we close to other guests and the whole place is yours. A buffet of good things from around the world, Christmas desserts and drinks your way. Up to 25 guests, any day in December. The full offer is in Czech; ask us in English any time.</p>
+      <p class="xmas-price"><span class="cz-only">od 990 Kč<small>za osobu a večer, bez DPH</small></span><span class="en-only">from CZK 990<small>per person, excl. VAT</small></span></p>
+      <a href="/vanocni-vecirky/" class="xmas-link"><span class="cz-only">Celá nabídka a poptávka</span><span class="en-only">See the offer</span></a>
+    </div>
+    <img class="xmas-photo fade-up d1" src="/assets/img/vecirek-interier.jpeg" alt="Interiér kavárny večer, rozsvícené lampy a police s vínem" loading="lazy">
   </div>
 </section>
 

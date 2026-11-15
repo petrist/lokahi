@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Děkujeme za poptávku | LŌKAHI</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/lokahi.css">
+<style>
+.thanks { min-height: calc(100vh - 6rem); display: flex; flex-direction: column; justify-content: center; padding: 9rem 0 5rem; }
+.thanks h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.05; }
+.thanks p { font-size: 1.05rem; color: #33312a; margin-top: 1.25rem; max-width: 46ch; }
+.thanks p.lede { font-family: var(--serif); font-style: italic; font-size: 1.4rem; color: var(--taupe); }
+.thanks .row { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.25rem; }
+.thanks .btn { color: var(--dark); border-color: rgba(18,20,16,0.35); }
+.thanks .btn:hover { background: var(--dark); color: var(--cream); }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="nav-logo">LŌKAHI</a>
+  <button class="nav-toggle" id="nav-toggle" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="nav-menu">
+    <ul class="nav-links">
+      <li><a href="/">Domů</a></li>
+      <li><a href="/#menu">Menu</a></li>
+      <li><a href="/#about">O nás</a></li>
+      <li><a href="/veci-ktere-milujeme/">Věci, které milujeme</a></li>
+      <li><a href="/#contact">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap thanks">
+  <p class="section-label">Vánoční večírek</p>
+  <h1>Děkujeme, poptávka je u nás.</h1>
+  <p class="lede">Ozveme se vám s volnými termíny a nabídkou podle vašeho setupu.</p>
+  <p>Kdyby to spěchalo, zavolejte na <a href="tel:+420737899827">+420 737 899 827</a> nebo napište na <a href="mailto:reservations@lokahi.cz">reservations@lokahi.cz</a>.</p>
+  <div class="row">
+    <a href="/vanocni-vecirky/" class="btn">Zpět na nabídku</a>
+    <a href="/" class="btn">Na hlavní stránku</a>
+  </div>
+</main>
+
+<footer>
+  <a href="/" class="footer-logo">LŌKAHI</a>
+  <span class="footer-text">– better together –</span>
+  <span class="footer-text">Jiráskova 15, Brno</span>
+  <a href="/ochrana-osobnich-udaju/" class="footer-text footer-link">Ochrana osobních údajů</a>
+</footer>
+
+<script src="/assets/lokahi.js"></script>
+</body>
+</html>
